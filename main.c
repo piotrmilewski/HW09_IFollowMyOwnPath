@@ -75,6 +75,7 @@ int sizeOfDir( char *dirName){
 
 int main(){
 
+  printf("\nStatistics for directory: ./\n");
   sizeOfDir("./");
   ls("./");
   return 0;

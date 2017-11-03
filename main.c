@@ -3,22 +3,7 @@
   HW09 -- Please follow the DIRections
   2017-11-02*/
 
-//#include "main.h"
-
-#include <stdio.h>
-#include <stdlib.h>
-#include <unistd.h>
-#include <sys/stat.h>
-#include <string.h>
-#include <errno.h>
-#include <dirent.h>
-
-void print_error(int err){
-  if (err == -1){
-    printf("%s\n", strerror(errno));
-    exit(1);
-  }
-}
+#include "main.h"
 
 char *prettyBytes( int buff, int B, char *retStr){
   if (buff / 1024 >= 1){
